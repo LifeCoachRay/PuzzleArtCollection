@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://npmcdn.com/moralis@0.0.6/dist/moralis.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPT- Puzzel Art Collection</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/tokenc.png" type="image/x-icon">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <a href="https://puzzleartcollection.website" class="logo">
+        <img src="./assets/images/tokenc.png" alt="Token">
+      </a>
+
+      <div class="header-right">
+
+        <div class="header-nav-wrapper">
+
+          <button class="navbar-toggle-btn" data-navbar-toggle-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+          <nav class="navbar" data-navbar>
+
+            <ul class="navbar-list">
+
+              <li>
+                <a href="https://mypockettokenfoundation.org" class="navbar-link">Other Collections</a>
+              </li>
+
+              <li>
+                <a href="https://www.mypockettokenfoundation.org/pocketpaper" class="navbar-link">Pocket Paper</a>
+              </li>
+
+              <li>
+                <a href="https://www.mypockettokenfoundation.org/events" class="navbar-link">Events</a>
+              </li>
+
+              <li>
+                <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456957886633607243" class="navbar-link">Featured NFT</a>
+              </li>
+
+              <li>
+                <a href="https://opensea.io/collection/bestintheworld" class="navbar-link">Featured Collection</a>
+              </li>
+
+              <li>
+                <a href="https://www.mypockettokenfoundation.org/developersblogs" class="navbar-link">Developers Blog</a>
+              </li>
+
+              <li>
+                <a href="https://www.mypockettokenfoundation.org/contactus" class="navbar-link">Contact Us</a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <div class="header-actions">
+          
+
+          <button class="btn btn-primary" onclick="login()">Login with MetaMask </button>     
+            <script >
+                Moralis.initialize ("ejDqC6IERu5o3GVRIFZwWoiLg9XmbUfT0ozr48Ir"); // Application id from moralis.io
+                Moralis.serverURL = "https://yn33mmexnows.usemoralis.com:2053/server"; //Server url from moralis.io
+        
+                function login(){
+                    console.log("login clicked");
+                    var user =Moralis.Web3.authenticate();
+                    if(user){
+                        console.log(user);
+                    }
+                }
+                
+                </script>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">MPT Puzzle Art NFT Collection<span>OpenSea Portal</span></h1>
+
+            <p class="hero-text">
+              This collection is Very special and rare. It is hand crafted, hand designed, and hand picked collection of fine art.
+            </p>
+
+            <div class="btn-group">
+              <a href="https://mypockettokenfoundation.org">
+              <button class="btn btn-primary" >Explore more</button>
+            </a>
+
+            <a href="https://opensea.io/collection/puzzelartcollection">
+              <button class="btn btn-secondary" >Buy More</button>
+              </a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/airdrop20a.jpg" alt="House Drop NFT">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEW PRODUCT
+      -->
+
+      <section class="new-product">
+        <div class="container">
+
+          <div class="section-header-wrapper">
+
+            <h2 class="h2 section-title">Showcased NFTs</h2>
+
+            <a href="https://opensea.io/collection/puzzelartcollection">
+            <button class="btn btn-primary">OpenSea Collections</button>
+            </a>
+
+          </div>
+
+          <ul class="product-list">
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/fox12a.jpg" alt="Fox">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457001867098718209">
+                  <button class="place-bid-btn">Make Offer</button>
+                  </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457001867098718209" class="h4 product-title">Puzzle Fox</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid"> Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/airballoon1a.jpg" alt="3D Air Balloon">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457002966610345985">
+                  <button class="place-bid-btn">Make Offer</button>
+                  </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457002966610345985" class="h4 product-title">3D Air Balloon</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid"> Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/birds6a.jpg" alt="Birds">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457004066121973761">
+                  <button class="place-bid-btn">Make Offer</button>
+                  </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457004066121973761" class="h4 product-title">Birds</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/blastoff13a.jpg" alt="Blast Off">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457005165633601537">
+                  <button class="place-bid-btn">Make Offer</button>
+                  </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457005165633601537" class="h4 product-title">Blast Off</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about">
+        <div class="container">
+
+          <h2 class="h2 about-title">About The Puzzle Art Collection</h2>
+
+          <ol class="about-list">
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">01</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-1.png" alt="wallet icon">
+                </div>
+
+                <h3 class="h3 about-card-title">Set up Your Wallet</h3>
+
+                <p class="about-card-text">
+                  Puzzle Art Collection is only available on OpenSea Polygon. MetaMask and Polygon Mainnet is required.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">02</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-2.png" alt="collection icon">
+                </div>
+
+                <h3 class="h3 about-card-title">Puzzle Art Collection</h3>
+
+                <p class="about-card-text">
+                  All Puzzle Art NFT's comes with unlockable instructions to receive the physical version.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">03</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-3.png" alt="folder icon">
+                </div>
+
+                <h3 class="h3 about-card-title"> NFT Listing Events</h3>
+
+                <p class="about-card-text">
+                  New NFT's are listed as past ones are sold.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">04</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-4.png" alt="diamond icon">
+                </div>
+
+                <h3 class="h3 about-card-title">Sell Your NFT's</h3>
+
+                <p class="about-card-text">
+                  You may sell, swap, or trade your Puzzle Art NFT's at anytime with no gas fee's.
+                </p>
+
+              </div>
+            </li>
+
+          </ol>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EXPLORE PRODUCT
+      -->
+
+      <section class="explore-product">
+        <div class="container">
+
+          <div class="section-header-wrapper">
+
+            <h2 class="h2 section-title">Explore Product</h2>
+
+            <a href="https://opensea.io/collection/puzzelartcollection">
+            <button class="btn btn-primary">Explore</button>
+            </a>
+
+          </div>
+
+          <ul class="product-list">
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/airdrop20a.jpg" alt="House Drop">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457000767587090433">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457000767587090433" class="h4 product-title">House Drop</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/hook1a.jpg" alt="Hook">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457006265145229313">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457006265145229313" class="h4 product-title">Hook</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/house19a.jpg" alt="3D House">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+ 
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457007364656857089">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457007364656857089" class="h4 product-title">3D House </a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/lighthouse26a.jpg" alt="3D Lighthouse">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457008464168484865">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457008464168484865" class="h4 product-title">3D Lighthouse</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/pinapple28a.jpg" alt="Pinapple">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457009563680112641">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457009563680112641" class="h4 product-title">Pineapple</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/puzzel3a.jpg" alt="Puzzel 3">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457010663191740417">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457010663191740417" class="h4 product-title">Puzzle 3</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/puzzelland11a.jpg" alt="3D Puzzel Land">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457011762703368193">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457011762703368193" class="h4 product-title">3D Puzzle Land</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/snowforest17a.jpg" alt="Snow Forest">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457012862214995969">
+                    <button class="place-bid-btn">Make Offer</button>
+                    </a>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457012862214995969" class="h4 product-title">Snow Forest</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/bidding-user.png" alt="MPT">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Developer</h4>
+
+                        <a href="https://twitter.com/MyPocketToken" class="author-username">@LifeCoachRay</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">0.325ETH</data>
+
+                      <p class="label">Starting Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">Make Offer</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="https://puzzleartcollection.website" class="logo">
+            <img src="./assets/images/tokenc.png" alt="My Pocket Token Foundation">
+          </a>
+
+          <p class="footer-brand-text">
+            Many thanks to the people of Centex for your time and artwork. 
+            A very special Thank You goes to the developers of The Puzzle Art collection.
+            And thanks to the community for your continued love and support.
+            
+          </p>
+
+          <h3 class="h4 social-title">Join the community</h3>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://github.com/LifeCoachRay/My-Pocket-Token-Foundation" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/MyPocketToken" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/lifecoachray/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/groups/825789427547665" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Marketplace</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://mypockettokenfoundation.org" class="footer-link">All NFTs</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://www.mypockettokenfoundation.org/developersblogs" class="footer-link">Developers Blog</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://opensea.io/collection/queen22978" class="footer-link">Other Collections</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Explore</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://www.mypockettokenfoundation.org/events" class="footer-link">Road Map</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456958986145235019" class="footer-link">Other Live NFT's</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://mypockettokenfoundation.org" class="footer-link">All NFTs</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Supports</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://www.mypockettokenfoundation.org/press-release" class="footer-link">Press Release</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://www.mypockettokenfoundation.org/contactus" class="footer-link">Help & Support</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://github.com/LifeCoachRay/My-Pocket-Token-Foundation" class="footer-link">GitHub</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="https://www.mypockettokenfoundation.org/pocketpaper" class="footer-link">Pocket Paper</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="https://mypockettokenfoundation.org">@MyPocketTokenFoundation.org</a> Open Source Project
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="https://opensea.io/privacy">Privacy Policy</a>
+
+          <a href="https://opensea.io/tos">Terms Of Service</a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.min.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
