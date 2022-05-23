@@ -1,0 +1,10 @@
+.container {
+    border-radius: 10px;
+}
+
+.started {
+    &:hover {
+        background: $white10;
+        border: 1px solid white;
+    }
+}

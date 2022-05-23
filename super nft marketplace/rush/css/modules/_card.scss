@@ -1,0 +1,37 @@
+.card {
+    padding: 2.6rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+
+    &.hide {
+        display: none;
+    }
+
+    &.active {
+        animation: fadeUp .4s linear;
+    }
+
+    .bid {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        background: $purple;
+        border-radius: 10px;
+        margin-top: 2.5rem;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid $lightpurple;
+            color: $lightpurple;
+        }
+    }
+
+    &:hover {
+        background: $halfwhite;
+        transform: scale(1.1);
+    }
+}
+
+.current {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,38 @@
+.card-creator {
+    border-radius: 10px;
+    padding-bottom: 42px;
+
+
+    .desc {
+        font-size: 1.5rem;
+    }
+
+    .follow {
+        padding: 1rem 11rem;
+        font-size: 2rem;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid $lightpurple;
+            color: $lightpurple;
+        }
+    }
+
+    &:hover {
+        background: $halfwhite;
+        transform: scale(1.1);
+    }
+
+    img.photo {
+        width: 99px;
+        margin-top: -5.3rem;
+    }
+}
+
+.creator .swiper {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}

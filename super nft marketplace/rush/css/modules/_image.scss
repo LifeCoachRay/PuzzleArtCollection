@@ -1,0 +1,28 @@
+.img-responsive {
+  width: 100%;
+  object-fit: cover;
+}
+
+@for $i from 1 through 10 {
+  .width#{$i} {
+    width: $i * 1rem;
+  }
+
+  .height#{$i} {
+    height: $i * 1rem;
+  }
+}
+
+@media screen and(max-width:1024px) {
+  .img-responsive-md {
+    width: 45%;
+
+  }
+}
+
+@media screen and(max-width:414px) {
+  .img-responsive-xs {
+    width: 40%;
+
+  }
+}

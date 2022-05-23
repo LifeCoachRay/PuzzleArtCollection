@@ -1,0 +1,352 @@
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jc {
+  &-center {
+    justify-content: center;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+
+  &-evenly {
+    justify-content: space-evenly;
+  }
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.ta {
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.none {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+
+.overhidden {
+  overflow: hidden;
+}
+
+[class^="col"] {
+  margin: 0 1.5%;
+}
+
+@for $i from 1 through 12 {
+  .col#{$i} {
+    width: (100%/ (12 / $i))-3%;
+  }
+}
+
+@for $i from 1 through 12 {
+  .nmcol#{$i} {
+    width: (100%/ (12 / $i));
+  }
+}
+
+@media screen and(max-width:1024px) {
+  @for $i from 1 through 12 {
+    .col#{$i}-md {
+      width: (100%/ (12 / $i))-3%;
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .nmcol#{$i}-md {
+      width: (100%/ (12 / $i));
+    }
+  }
+
+  .col-reverse-md {
+    flex-direction: column-reverse;
+  }
+
+  .flexcol-md {
+    flex-direction: column;
+  }
+
+  .jc {
+    &-center-md {
+      justify-content: center;
+    }
+
+    &-between-md {
+      justify-content: space-between;
+    }
+
+    &-around-md {
+      justify-content: space-around;
+    }
+
+    &-evenly-md {
+      justify-content: space-evenly;
+    }
+  }
+
+  .ai-center-md {
+    align-items: center;
+  }
+
+  .ta {
+    &-center-md {
+      text-align: center;
+    }
+
+    &-right-md {
+      text-align: right;
+    }
+
+    &-left-md {
+      text-align: left;
+    }
+
+    &-justify-md {
+      text-align: justify;
+    }
+  }
+
+  .flex-md {
+    display: flex;
+  }
+
+  .none-md {
+    display: none;
+  }
+
+  .relative-md {
+    position: relative;
+  }
+
+  .absolute-md {
+    position: absolute;
+  }
+
+
+  .overhidden-md {
+    overflow: hidden;
+  }
+}
+
+@media screen and(max-width:768px) {
+  @for $i from 1 through 12 {
+    .col#{$i}-s {
+      width: (100%/ (12 / $i))-3%;
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .nmcol#{$i}-s {
+      width: (100%/ (12 / $i));
+    }
+  }
+
+  .col-reverse-s {
+    flex-direction: column-reverse;
+  }
+
+  .flexcol-s {
+    flex-direction: column;
+  }
+
+  .jc {
+    &-center-s {
+      justify-content: center;
+    }
+
+    &-between-s {
+      justify-content: space-between;
+    }
+
+    &-around-s {
+      justify-content: space-around;
+    }
+
+    &-evenly-s {
+      justify-content: space-evenly;
+    }
+  }
+
+  .ai-center-s {
+    align-items: center;
+  }
+
+  .ta {
+    &-center-s {
+      text-align: center;
+    }
+
+    &-right-s {
+      text-align: right;
+    }
+
+    &-left-s {
+      text-align: left;
+    }
+
+    &-justify-s {
+      text-align: justify;
+    }
+  }
+
+  .flex-s {
+    display: flex;
+  }
+
+  .none-s {
+    display: none;
+  }
+
+  .relative-s {
+    position: relative;
+  }
+
+  .absolute-s {
+    position: absolute;
+  }
+
+
+  .overhidden-s {
+    overflow: hidden;
+  }
+}
+
+@media screen and(max-width:414px) {
+  [class^="col"] {
+    width: 100%;
+  }
+
+  [class^="nmcol"] {
+    width: 100%;
+  }
+
+  @for $i from 1 through 12 {
+    .col#{$i}-xs {
+      width: (100%/ (12 / $i))-3%;
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .nmcol#{$i}-xs {
+      width: (100%/ (12 / $i));
+    }
+  }
+
+  .col-reverse-xs {
+    flex-direction: column-reverse;
+  }
+
+  .flexcol-xs {
+    flex-direction: column;
+  }
+
+  .jc {
+    &-center-xs {
+      justify-content: center;
+    }
+
+    &-between-xs {
+      justify-content: space-between;
+    }
+
+    &-around-xs {
+      justify-content: space-around;
+    }
+
+    &-evenly-xs {
+      justify-content: space-evenly;
+    }
+  }
+
+  .ai-center-xs {
+    align-items: center;
+  }
+
+  .ta {
+    &-center-xs {
+      text-align: center;
+    }
+
+    &-right-xs {
+      text-align: right;
+    }
+
+    &-left-xs {
+      text-align: left;
+    }
+
+    &-justify-xs {
+      text-align: justify;
+    }
+  }
+
+  .flex-xs {
+    display: flex;
+  }
+
+  .none-xs {
+    display: none;
+  }
+
+  .relative-xs {
+    position: relative;
+  }
+
+  .absolute-xs {
+    position: absolute;
+  }
+
+
+  .overhidden-xs {
+    overflow: hidden;
+  }
+}

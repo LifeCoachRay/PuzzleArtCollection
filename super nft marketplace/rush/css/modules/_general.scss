@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  transition: .2s linear;
+  // text-transform: capitalize;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  font-size: 10px;
+  color: white;
+  background: $darkblue;
+  font-family: "Poppins", sans-serif;
+}
+
+.font2 {
+  font-family: "Playfair Display", serif;
+}
+
+
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 120%;
+}
+
+p,
+h4,
+h5 {
+  margin: 0;
+  line-height: 180%;
+}

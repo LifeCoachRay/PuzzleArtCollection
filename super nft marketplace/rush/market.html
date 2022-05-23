@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="https://npmcdn.com/moralis@0.0.6/dist/moralis.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- swiperjs cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    <!-- google font link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Super NFT Marketplace</title>
+    <link rel="shortcut icon" href="lifecoach.png" type="image/x-icon">
+</head>
+
+<body>
+    <body oncontextmenu="return false;">
+        <script type ="text/javascript">
+          document.addEventListener('contextmenu', event => event.preventDefault());
+          </script>
+
+    <!-- header section starts -->
+    <header class="header bg-white10">
+        <div class="container">
+            <a href="http://puzzleartcollection.website" class="logo bold white">Super NFT Marketplace<span class="lightpurple">LIVE</span></a>
+
+            <div class="menu">
+                
+                </form>
+                <a href="#collections">Collections</a>
+                <a href="https://www.mypockettokenfoundation.org/pocketpaper">Pocket Paper</a>
+                <a href="#faq">FAQ</a>
+                <button class="btn bg-purple wallet" onclick="login()">Sign Guest Book with MetaMask </button>
+                <script >
+                    Moralis.initialize ("ejDqC6IERu5o3GVRIFZwWoiLg9XmbUfT0ozr48Ir"); // Application id from moralis.io
+                    Moralis.serverURL = "https://yn33mmexnows.usemoralis.com:2053/server"; //Server url from moralis.io
+            
+                    function login(){
+                        console.log("login clicked");
+                        var user =Moralis.Web3.authenticate();
+                        if(user){
+                            console.log(user);
+                        }
+                    }
+                    
+                    </script>
+            </div>
+
+            <div class="fas fa-wallet" id="wallet"></div>
+            <div class="fas fa-bars" id="bar"></div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section id="home" class="spacetop15 spacebottom10">
+        <div class="container">
+            <div class="row jc-between ai-center col-reverse-s">
+                <div class="col5 col6-md col12-s ta-center-s">
+                    <h1 class="size5 bold spacebottom1">
+                         Super NFT Marketplace
+                    </h1>
+                    <p class="size2 spacebottom3 halfwhite">Come test the games and 
+                        make a offer to show support.
+                    </p>
+
+                    <div class="row col8 col9-md jc-between spacebottom4 jc-evenly-s col12-s">
+                        <a href="http://mypockettokenfoundation.org" class="btn bg-purple size2 white ">Explore more</a>
+                        <a href="https://opensea.io/collection/puzzelartcollection" class="btn bg-white10 size2 white ">Make Offer</a>
+                    </div>
+
+                    <div class="row jc-between">
+                        <div class="ta-center">
+                            <p class="size3 bold">100+</p>
+                            <p class="size2 halfwhite">Artworks</p>
+                        </div>
+                        <div class="ta-center">
+                            <p class="size3 bold">20+</p>
+                            <p class="size2 halfwhite">Artist</p>
+                        </div>
+                        <div class="ta-center">
+                            <p class="size3 bold">90+</p>
+                            <p class="size2 halfwhite">GitHub Projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col6 col12-s spacebottom3-s">
+                    <img src="foxb.png" alt="" class="img-responsive float">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- partner section starts -->
+    <section class="spacer5 spacer0-xs">
+        <div class="container row jc-between jc-around-md">
+            <img src="raydayc.png" alt="" class="height6 img-responsive-md">
+            <img src="ethereum.svg" alt="" class="height6 img-responsive-md">
+            <img src="token2b.png" alt="" class="height6 img-responsive-md spacetop1-md">
+        </div>
+    </section>
+    <!-- partner section ends -->
+
+    <!-- about section starts -->
+    <section id="about" class="spacer10">
+        <div class="container">
+            <h1 class="bold size4 ta-center">About Us</h1>
+            <p class="spacebottom3 halfwhite size2 ta-center">
+                This is a fun NFT Super Marketplace. The mission is to<br>make the blockchain better.
+            </p>
+            <div class="row ai-center jc-between flexcol-s">
+                <div class="col5 col10-s spacebottom2-s">
+                    <img src="airballoon1a.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="col6 col12-s ta-center-s">
+                    <h3 class="size3 bold">Message from the Foundation</h3>
+                    <p class="size2 spacetop1 spacebottom3 halfwhite">The My Pocket Token Foundation created this live Super NFT Marketplace to promote 
+                        the awarness of NFTs and the technology behind them.
+                        Feel free to test the games and make an offer on the NFTs to show your support. 
+                        The Foundation is working hard to make the blockchain better and to give you the best NFT marketplace in the world.
+                    </p>
+                    <a href="https://www.mypockettokenfoundation.org/pocketpaper" class="btn bg-purple size2 white">Pocket Paper</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- collections section starts -->
+    <section class="collections spacer10" id="collections">
+        <div class="container">
+            <h1 class="bold size4 ta-center">Super NFT Collections</h1>
+            <p class="spacebottom3 halfwhite size2 ta-center">
+                All NFTs are listed. Please feel free to <br>make an offer to show support. <br> Thank You
+            </p>
+            <div class="row spacebottom3 filter-buttons">
+                <div class="col3 filter col6-xs spacebottom1-xs" data-filter="all">All</div>
+                <div class="col3 filter col6-xs spacebottom1-xs" data-filter="art">General Art</div>
+                <div class="col3 filter col6-xs" data-filter="photograpy">Puzzle Art</div>
+                <div class="col3 filter col6-xs" data-filter="pattern">Super Rare</div>
+            </div>
+            <div class="row box-card jc-evenly-md">
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="art">
+                    <img src="beauty-queen-pia.jpg" class="img-responsive" alt="Queen Pia">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Queen Pia NFT</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.25ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456978777354534962" class="bid size2 ta-center">
+                        
+                        Make Offer
+                    </a>
+                </div>
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photograpy">
+                    <img src="queenofthenight.jpg" class="img-responsive" alt="Queen Of The Night">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Queen Of The Night</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.259ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456975478819651659" class="bid size2 ta-center">
+                        Make Offer
+                    </a>
+                </div>
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="pattern">
+                    <img src="queensara1.gif" class="img-responsive" alt="Queen Sara">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Queen Sara NFT</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.888ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456956787121979467" class="bid size2 ta-center">
+                        Make Offer
+                    </a>
+                </div>
+
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="art">
+                    <img src="adamandeve3dnft1.png" class="img-responsive" alt="Adam and Eve 3D">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Adam and Eve 3D NFT</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.275ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456990871982440449" class="bid size2 ta-center">
+                        Make Offer
+                    </a>
+                </div>
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photograpy">
+                    <img src="queenoffaces.jpg" class="img-responsive" alt="Queen Of Faces">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Queen Of Faces</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.85ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456976578331279435" class="bid size2 ta-center">
+                        Make Offer
+                    </a>
+                </div>
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="pattern">
+                    <img src="bojackson.jpg" class="img-responsive" alt="Bo Jackson NFT">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Bo Jackson NFT</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.85ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456971080773140580" class="bid size2 ta-center">
+                        Make Offer
+                    </a>
+                </div>
+
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="art">
+                    <img src="blackroad3d.png" class="img-responsive" alt="Black Road 3D">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Black Road 3D NFT</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Current Price</p>
+                            <h5 class="size2 bold">3.5ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456991971494068225" class="bid size2 ta-center">
+                        Buy Now
+                    </a>
+                </div>
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photograpy">
+                    <img src="fullmoon3d.png" class="img-responsive" alt="Full Moon 3D NFT">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">Full Moon 3D NFT</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.295ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456988672959184899" class="bid size2 ta-center">
+                        Make Offer
+                    </a>
+                </div>
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="pattern">
+                    <img src="91magicjohnson.jpg" class="img-responsive" alt="91 Magic Johnson NFT">
+                    <div class="row jc-between spacetop2">
+                        <div>
+                            <p class="size2 halfwhite">
+                                @LifeCoachRay
+                            </p>
+                            <h5 class="size2 bold">91 Magic Johnson NFT</h5>
+                        </div>
+                        <div>
+                            <p class="current halfwhite">Starting Price</p>
+                            <h5 class="size2 bold">0.035ETH</h5>
+                        </div>
+                    </div>
+                    <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456965583215001700" class="bid size2 ta-center">
+                        Make Offer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- collections section ends -->
+
+    <!-- featured section starts -->
+    <section class="featured spacer10" id="featured">
+        <div class="container">
+            <h1 class="bold size4 ta-center">Premium Artworks</h1>
+            <p class="spacebottom3 halfwhite size2 ta-center">
+                This is the top of the line, best in<br>world NFTs.
+            </p>
+            <div class="swiper card-slider row">
+                <div class="swiper-wrapper">
+                    <div class="col4 col5-md col7-s swiper-slide">
+                        <div class="card bg-white10">
+                            <img src="blastoff13a.jpg" class="img-responsive" alt="Blast Off">
+                            <div class="row jc-between spacetop2">
+                                <div>
+                                    <p class="size2 halfwhite">
+                                        @LifeCoachRay
+                                    </p>
+                                    <h5 class="size2 bold">Blast Off</h5>
+                                </div>
+                                <div>
+                                    <p class="current halfwhite">Starting Price</p>
+                                    <h5 class="size2 bold">0.325ETH</h5>
+                                </div>
+                            </div>
+                            <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489457005165633601537" class="bid size2 ta-center">
+                                Make Offer
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col4 col5-md col7-s swiper-slide">
+                        <div class="card bg-white10">
+                            <img src="1990danmarino.jpeg" class="img-responsive" alt="1990 Dan Marino NFT">
+                            <div class="row jc-between spacetop2">
+                                <div>
+                                    <p class="size2 halfwhite">
+                                        @LifeCoachRay
+                                    </p>
+                                    <h5 class="size2 bold">1990 Dan Marino NFT</h5>
+                                </div>
+                                <div>
+                                    <p class="current halfwhite">Starting Price</p>
+                                    <h5 class="size2 bold">0.888ETH</h5>
+                                </div>
+                            </div>
+                            <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456973279796396132" class="bid size2 ta-center">
+                                Make Offer
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col4 col5-md col7-s swiper-slide">
+                        <div class="card bg-white10">
+                            <img src="queenmarage.jpg" class="img-responsive" alt="Queen Marage">
+                            <div class="row jc-between spacetop2">
+                                <div>
+                                    <p class="size2 halfwhite">
+                                        @LifeCoachRay
+                                    </p>
+                                    <h5 class="size2 bold">Queen Marage</h5>
+                                </div>
+                                <div>
+                                    <p class="current halfwhite">Starting Price</p>
+                                    <h5 class="size2 bold">0.295ETH</h5>
+                                </div>
+                            </div>
+                            <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456979876866162738" class="bid size2 ta-center">
+                                Make Offer
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col4 col5-md col7-s swiper-slide">
+                        <div class="card bg-white10">
+                            <img src="queenathena.jpg" class="img-responsive" alt="Queen Athena">
+                            <div class="row jc-between spacetop2">
+                                <div>
+                                    <p class="size2 halfwhite">
+                                        @LifeCoachRay
+                                    </p>
+                                    <h5 class="size2 bold">Queen Athena</h5>
+                                </div>
+                                <div>
+                                    <p class="current halfwhite">Starting Price</p>
+                                    <h5 class="size2 bold">0.25ETH</h5>
+                                </div>
+                            </div>
+                            <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/594615058559919715238025687917740213328570310565684547489456980976377790514" class="bid size2 ta-center">
+                                Make Offer
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featured section ends -->
+
+    <!-- creator section starts -->
+    <section class="creator spacer10" id="featured">
+        <div class="container">
+            <h1 class="bold size4 ta-center">Super Creators</h1>
+            <p class="spacebottom3 halfwhite size2 ta-center">
+                This is where the best talent is showcased.<br>Join the best community.
+            </p>
+            <div class="swiper row creator-slider">
+                <div class="swiper-wrapper">
+                    <div class="col4 col5-md col7-s swiper-slide">
+                        <div class="card-creator bg-white10 ta-center">
+                            <img src="house19a.jpg" class="img-responsive" alt="House 19">
+                            <img src="goodpic.png" class="photo" alt="good pic">
+                            <h5 class="spacer1 size2 bold">Life Coach Ray</h5>
+                            <p class="spacebottom2 halfwhite desc">Blockchain developer,
+                                specializing in Smart Contracts <br> and Web3 Development. <br> Connect with me.
+                                </p>
+                                
+                               <a href="https://twitter.com/MyPocketToken">
+                            <button  class="follow ta-center bg-purple white"> Follow</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col4 col5-md col7-s swiper-slide">
+                        <div class="card-creator bg-white10 ta-center">
+                            <img src="bampanda.jpg" class="img-responsive" alt="bam panda">
+                            <img src="tenor.gif" class="photo" alt="tenor">
+                            <h5 class="spacer1 size2 bold">My Pocket Token Foundation</h5>
+                            <p class="spacebottom2 halfwhite desc">The Mission is to,
+                                make the <br> blockchain better
+                                </p>
+                                <a href="https://www.facebook.com/groups/825789427547665">
+                            <button class="follow ta-center bg-purple white"> Join Us</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col4 col5-md col7-s swiper-slide">
+                        <div class="card-creator bg-white10 ta-center">
+                            <img src="moon.jpg" class="img-responsive" alt="moon">
+                            <img src="nightmoon.jpg" class="photo" alt="Night Moon">
+                            <h5 class="spacer1 size2 bold">Developers Blog</h5>
+                            <p class="spacebottom2 halfwhite desc">Everyone works together
+                                to create the <br>best experience we can. <br> Join the movement with us.
+                                </p>
+                                <a href="https://www.mypockettokenfoundation.org/developersblogs">
+                            <button class="follow ta-center bg-purple white">Subscribe </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- creator section ends -->
+
+    <!-- FAQ section starts -->
+    <section class="spacer10" id="faq">
+        <div class="container">
+            <h1 class="bold size4 ta-center">Freaquently Asked<br>Question</h1>
+            <p class="spacebottom3 halfwhite size2 ta-center">
+                Let's Talk about it.
+            </p>
+            <div class="row jc-between">
+                <div class="box-faq col6 col12-s">
+                    <div class="box spacebottom5">
+                        <div class="title row jc-between">
+                            <h3 class="size2 halfwhite">What is the My Pocket Token Foundation?</h3>
+                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                        </div>
+                        <p class="answer size2 spacetop1 ">The My Pocket TokenFoundation is a blockchain development foundation,
+                            with a mission to make the blockchain better.
+                            </p>
+                    </div>
+                    <div class="box spacebottom5">
+                        <div class="title row jc-between">
+                            <h3 class="size2 halfwhite">What is the Puzzle Art Collection?</h3>
+                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                        </div>
+                        <p class="answer size2 spacetop1 ">The Puzzle Art Collection is a collection of physical artwork 
+                            tokenized as NFTs.
+                            </p>
+                    </div>
+                    <div class="box spacebottom5">
+                        <div class="title row jc-between">
+                            <h3 class="size2 halfwhite">Is there a White Paper?</h3>
+                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                        </div>
+                        <p class="answer size2 spacetop1 ">No, the Foundation does not use a White Paper.
+                            You may learn more or read a down to earth copy of what is going on in the Official Pocket Paper.
+
+                            </p>
+                    </div>
+                </div>
+                <div class="box-faq col6 col12-s">
+                    <div class="box spacebottom5">
+                        <div class="title row jc-between">
+                            <h3 class="size2 halfwhite">Is MetaMask required?</h3>
+                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                        </div>
+                        <p class="answer size2 spacetop1 ">Yes, MetaMask is required to use any of the NFT Marketplaces.</p>
+                    </div>
+                    <div class="box spacebottom5">
+                        <div class="title row jc-between">
+                            <h3 class="size2 halfwhite">Can I sell my NFTs?</h3>
+                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                        </div>
+                        <p class="answer size2 spacetop1 ">Yes, you may sell, swap, or trade your NFTs on OpenSea Polygon or migrate to any 
+                            platform you choose.
+                            </p>
+                    </div>
+                    <div class="box spacebottom5">
+                        <div class="title row jc-between">
+                            <h3 class="size2 halfwhite">What is the price of the NFTs?</h3>
+                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                        </div>
+                        <p class="answer size2 spacetop1 ">Most NFTs listed are in ICO stage and do not have a starting price.
+                            The prices listed are only suggested starting prices. Users aer free to bid higher or lower if needed.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section ends -->
+
+    <!-- banner section starts -->
+    <section class="spacer10" id="banner">
+        <div class="container spacer5 bg-purple ta-center">
+            <h1 class="size5 bold spacebottom2 size4-xs">Help spread the awarness<br>of NFTs</h1>
+            <a href="http://puzzleartcollection.website" class="btn bg-halfwhite size2 started ">Get started</a>
+        </div>
+    </section>
+    <!-- banner section ends -->
+
+    <!-- footer section starts -->
+    <footer class="spacer10">
+        <div class="container row jc-between flexcol-s ta-center-s">
+            <div class="row flexcol spacebottom3-s">
+                <a href="#home" class="size2 bold white">Super NFT<span class="lightpurple">Marketplace</span></a>
+                <p class="size2 halfwhite spacetop2">The Foundation want to thank all<br>of the developers and artist
+                    of the community.
+                    <br>Your work is greatly appreaciated.</p>
+            </div>
+            <div class="row flexcol spacebottom3-s">
+                <a href="#about" class="bold size2 white">About</a>
+                <a href="https://puzzleartcollection.website" class="size2 halfwhite spacetop2">Puzzle Art Collection</a>
+                <a href="https://www.mypockettokenfoundation.org/pocketpaper" class="size2 halfwhite spacetop2">Pocket Paper</a>
+                <a href="https://opensea.io/tos" class="size2 halfwhite spacetop2">Terms of Service</a>
+                <a href="#faq" class="size2 halfwhite spacetop2">FAQ</a>
+            </div>
+            <div class="row flexcol spacebottom3-s">
+                <a href="https://mypockettokenfoundation.org" class="bold size2 white">Official Website</a>
+                <a href="https://www.mypockettokenfoundation.org/developersblogs" class="size2 halfwhite spacetop2">Developers Blog</a>
+                <a href="https://twitter.com/MyPocketToken" class="size2 halfwhite spacetop2">Follow us on Twitter</a>
+                <a href="https://opensea.io/privacy" class="size2 halfwhite spacetop2">Privacy & Policy</a>
+                <a href="https://www.mypockettokenfoundation.org/events" class="size2 halfwhite spacetop2">Events</a>
+            </div>
+            <div class="row flexcol spacebottom3-s">
+                <h5 class="bold size2">Contact Us</h5>
+                <a  class="size2 halfwhite spacetop2">1(802)765-0122</a>
+                <a href="https://www.mypockettokenfoundation.org/contactus" class="size2 halfwhite spacetop2">mypockettokenfoundation.org</a>
+                <div class="row jc-between spacetop2 jc-evenly-s">
+                    <a href="https://www.facebook.com/groups/825789427547665" class="fab fa-facebook size2 halfwhite spacetop2"></a>
+                    <a href="https://twitter.com/MyPocketToken" class="fab fa-twitter size2 halfwhite spacetop2"></a>
+                    <a href="https://www.instagram.com/lifecoachray/" class="fab fa-instagram size2 halfwhite spacetop2"></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://mypockettokenfoundation.org">
+        <p class="size2 halfwhite spacetop5 ta-center">Created by <span class="white bold">@MyPockettokenFoundation.org</span> | All Right
+            Reserved!</p>
+            </a>
+    </footer>
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

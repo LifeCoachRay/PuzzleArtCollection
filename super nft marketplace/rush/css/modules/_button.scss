@@ -1,0 +1,11 @@
+.btn {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: $halfwhite;
+
+  }
+}

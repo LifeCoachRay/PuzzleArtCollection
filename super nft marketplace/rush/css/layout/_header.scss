@@ -1,0 +1,149 @@
+// Header
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: .5rem 0;
+    z-index: 99;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 2.5rem;
+        }
+
+
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            .search-form {
+                height: 4.5rem;
+                width: 38.4rem;
+                padding: 0 2rem;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+                background: $white10;
+
+                input {
+                    width: 100%;
+                    padding-left: 1rem;
+                    font-size: 2rem;
+                    color: white;
+                    background: transparent;
+
+                    &::placeholder {
+                        color: $halfwhite;
+                        font-size: 2rem;
+                    }
+                }
+
+                label {
+                    color: $halfwhite;
+                    font-size: 2rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+            a {
+                font-size: 2rem;
+                color: white;
+                padding: 1rem 2rem;
+
+                &:hover {
+                    color: $halfwhite;
+
+                }
+            }
+
+
+        }
+    }
+}
+
+#bar,
+#wallet {
+    display: none;
+    font-size: 2rem;
+
+    &:hover {
+        color: $halfwhite;
+    }
+}
+
+@media screen and(max-width:1024px) {
+    .wallet {
+        display: none;
+    }
+
+    #wallet {
+        display: block;
+    }
+
+
+}
+
+@media screen and(max-width:768px) {
+    .wallet {
+        display: block;
+    }
+
+    #wallet {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+
+
+    header {
+        .container {
+            .menu {
+                position: absolute;
+                top: 99%;
+                right: -100%;
+                width: 70%;
+                background: $white10;
+                height: 100vh;
+                z-index: 99;
+                display: flex;
+                flex-direction: column;
+
+                .search-form {
+                    width: 100%;
+                    margin-bottom: 10rem;
+                    border-radius: 0;
+
+                    input {
+                        &::placeholder {
+                            text-align: center;
+                        }
+                    }
+
+                }
+
+                a {
+                    margin-bottom: 10rem;
+                }
+
+                &.active {
+                    right: 0;
+                }
+
+            }
+        }
+    }
+
+
+}

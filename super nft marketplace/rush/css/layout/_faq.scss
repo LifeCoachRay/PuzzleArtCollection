@@ -1,0 +1,40 @@
+.box {
+    cursor: pointer;
+
+    .title {
+        border-bottom: 1px solid $halfwhite;
+        padding-bottom: 1rem;
+    }
+
+    .answer {
+        display: none;
+        animation: down .2s linear backwards;
+        transform-origin: top;
+    }
+
+    &.active {
+
+        .title {
+            border-color: white;
+
+            h3 {
+                color: white;
+            }
+
+            i {
+                transform: rotate(180deg);
+                color: white;
+            }
+        }
+
+        .answer {
+            display: block;
+        }
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: scaleY(0);
+    }
+}

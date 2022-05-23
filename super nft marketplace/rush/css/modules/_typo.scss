@@ -1,0 +1,60 @@
+@for $i from 1 through 15 {
+  .size#{$i} {
+    font-size: $i * 1rem;
+  }
+}
+
+.lh14 {
+  line-height: 140%;
+}
+
+.lh12 {
+  line-height: 120%;
+}
+
+.lh18 {
+  line-height: 180%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hover {
+  :hover {
+    opacity: 50%;
+    transition: 0.5s;
+  }
+}
+
+@media screen and(max-width:1024px) {
+  @for $i from 1 through 15 {
+    .size#{$i}-md {
+      font-size: $i * 1rem;
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  @for $i from 1 through 15 {
+    .size#{$i}-s {
+      font-size: $i * 1rem;
+    }
+  }
+}
+
+@media screen and(max-width:414px) {
+  @for $i from 1 through 15 {
+    .size#{$i}-xs {
+      font-size: $i * 1rem;
+    }
+  }
+
+  .lh14-xs {
+    line-height: 140%;
+  }
+}
